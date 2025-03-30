@@ -18,10 +18,10 @@ This assignment is designed to help you gain hands-on experience with the **Java
 ---
 
 #### **Q1. Filter Employees by Salary**
-Given a list of `Employee` objects, return all employees whose salary is greater than 50,000.
+Given a list of `EmployeeGroup` objects, return all employees whose salary is greater than 50,000.
 
 ```java
-class Employee {
+class EmployeeGroup {
     String name;
     double salary;
 }
@@ -43,7 +43,7 @@ Output: {apple=2, banana=1}
 Group a list of employees by their department.
 
 ```java
-class Employee {
+class EmployeeGroup {
     String name;
     String department;
 }
@@ -51,7 +51,7 @@ class Employee {
 
 ---
 
-#### **Q4. Employee with Max Salary**
+#### **Q4. EmployeeGroup with Max Salary**
 Find the employee with the highest salary from the list.
 
 ---
@@ -77,7 +77,7 @@ Given a list of employees, partition them into two groups:
 - Experience < 5 years
 
 ```java
-class Employee {
+class EmployeeGroup {
     String name;
     int experience;
 }
@@ -105,7 +105,7 @@ Given a list of departments and a list of employees, return the names of departm
 
 ---
 
-#### **Q12. Employee Name Initial Map**
+#### **Q12. EmployeeGroup Name Initial Map**
 Return a map where the key is the **first character** of employee names, and the value is a list of names starting with that character.
 
 ```java
