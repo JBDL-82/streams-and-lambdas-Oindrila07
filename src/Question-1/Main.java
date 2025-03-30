@@ -6,13 +6,10 @@ import java.util.stream.IntStream;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        List<String> employeeNames = List.of("Alexa Rogers","Souvik Pal","Anirush Ghosh","Alok Kaur","Mahi Roy","Oindrila Som","Raka Chatterjee");
-
-        List<Double> salaries = List.of(12000.3,39990.4,4893020.0,59930.10,10000.0,80000.0,54000.10);
-
-        List<Employee> emps= IntStream.range(0,employeeNames.size())
-                .mapToObj(i->new Employee(employeeNames.get(i),salaries.get(i)))
-                .toList();
+        List<Employee> emps= List.of(new Employee("Rahul",680200),
+                new Employee("Anjali",6700),new Employee("Rakesh",100000)
+        ,new Employee("Prity",34000),new Employee("Anirudh",50000),new Employee("Rishabh",54000)
+        ,new Employee("Neha",50000.1),new Employee("Subhash",19000));
 
         emps.stream()
                 .filter(obj->obj.getSalary()>50000.0)
